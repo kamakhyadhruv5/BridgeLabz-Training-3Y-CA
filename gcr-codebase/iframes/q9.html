@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload</title>
+</head>
+<body>
+
+    <h1>Upload Image</h1>
+
+    <form>
+
+        <!-- accept restricts the selectable file types -->
+        <label for="image">Choose an image:</label>
+
+        <input
+            type="file"
+            id="image"
+            name="image"
+            accept=".jpg, .png">
+
+        <br><br>
+
+        <input type="submit" value="Upload">
+
+    </form>
+
+    <p>
+        Only JPG and PNG image files are allowed.
+    </p>
+
+</body>
+</html>
