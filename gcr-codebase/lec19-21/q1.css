@@ -1,0 +1,122 @@
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.examples {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    padding: 30px;
+}
+
+.example {
+    width: 230px;
+    min-height: 230px;
+
+    background-color: white;
+    padding: 20px;
+
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+}
+
+/* :hover changes the link when mouse is over it */
+.example a:hover {
+    color: white;
+    background-color: #3498db;
+}
+
+.example a {
+    padding: 10px;
+}
+
+/* :focus changes an input when it is selected */
+.example input {
+    padding: 10px;
+    border: 2px solid #ccc;
+}
+
+.example input:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #eaf4ff;
+}
+
+/* :active applies while the button is being clicked */
+.example button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+}
+
+.example button:active {
+    background-color: #c0392b;
+    transform: scale(0.95);
+}
+
+/* :nth-child() selects a particular list item */
+.example li:nth-child(2) {
+    background-color: #f1c40f;
+    font-weight: bold;
+}
+
+.example li {
+    padding: 5px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    .examples {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .examples {
+        flex-direction: column;
+    }
+
+    .example {
+        width: 100%;
+        max-width: 350px;
+    }
+}

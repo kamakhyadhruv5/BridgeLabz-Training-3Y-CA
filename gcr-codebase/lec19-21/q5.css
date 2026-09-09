@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+/* Primary button */
+.primary {
+    border: none;
+    background-color: #3498db;
+    color: white;
+}
+
+.primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* Secondary button */
+.secondary {
+    border: none;
+    background-color: #27ae60;
+    color: white;
+}
+
+.secondary:hover {
+    background-color: #1e8449;
+    transform: translateY(-3px);
+}
+
+/* Outline button */
+.outline {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+
+.outline:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Focus pseudo-class */
+button:focus {
+    outline: 3px solid #f1c40f;
+    outline-offset: 3px;
+}
+
+/* Active pseudo-class */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Disabled pseudo-class */
+button:disabled {
+    background-color: #aaa;
+    color: #eee;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 200px;
+    }
+}
