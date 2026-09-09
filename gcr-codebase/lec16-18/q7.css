@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Main heading */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* First paragraph */
+.intro {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Serif font */
+.serif {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Sans-serif font */
+.sans {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+}
+
+/* Different text elements */
+mark {
+    background-color: #f1c40f;
+    color: #222;
+}
+
+strong {
+    color: #e74c3c;
+}
+
+em {
+    color: #3498db;
+}
+
+/* Larger text */
+.large {
+    font-size: 22px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+/* First letter pseudo-element */
+.large::first-letter {
+    font-size: 45px;
+    font-weight: bold;
+    color: #9b59b6;
+}
+
+/* First line pseudo-element */
+.intro::first-line {
+    font-weight: bold;
+}
+

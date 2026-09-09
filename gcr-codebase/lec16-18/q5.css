@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   ATTRIBUTE SELECTORS
+   ========================= */
+
+/* Selects input elements with type="text" */
+input[type="text"] {
+    border: 3px solid #3498db;
+}
+
+/* Selects links whose href starts with https */
+a[href^="https"] {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* =========================
+   PSEUDO-CLASSES
+   ========================= */
+
+/* Changes list item when mouse hovers */
+li:hover {
+    background-color: #f1c40f;
+}
+
+/* Styles input when it receives focus */
+input:focus {
+    outline: 3px solid #e67e22;
+}
+
+/* Selects the third list item */
+li:nth-child(3) {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* =========================
+   PSEUDO-ELEMENTS
+   ========================= */
+
+/* Adds content before heading */
+h2::before {
+    content: "★ ";
+}
+
+/* Adds content after heading */
+h2::after {
+    content: " ★";
+}
+
+/* =========================
+   COMBINATORS
+   ========================= */
+
+/* Child combinator: direct p children of div */
+.combinators > div > p {
+    color: #3498db;
+}
+
+/* Adjacent sibling: p immediately after span */
+span + p {
+    background-color: #d5f5e3;
+}
+
+/* General sibling: all p after span */
+span ~ p {
+    padding: 10px;
+}
+
+/* Descendant selector: all p inside .items */
+.items p {
+    line-height: 1.6;
+}
+
+.items,
+.form-section,
+.combinators {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+li {
+    padding: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+}
+

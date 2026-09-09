@@ -1,0 +1,87 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    background-color: #222;
+    z-index: 10;
+}
+
+/* Main section */
+main {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+/* Linear gradient */
+.linear {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+
+    background-attachment: fixed;
+}
+
+.linear h2,
+.radial h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Radial gradient */
+.radial {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    background: radial-gradient(circle, #f1c40f, #e67e22, #e74c3c);
+}
+
+.linear p,
+.radial p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Fixed footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px;
+    background-color: #222;
+}
+

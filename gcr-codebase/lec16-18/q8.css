@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+/* Outer margin layer */
+.margin-layer {
+    background-color: #f1c40f;
+    padding: 40px;
+}
+
+/* Border layer */
+.border-layer {
+    background-color: #e74c3c;
+    border: 15px solid #8e44ad;
+}
+
+/* Padding layer */
+.padding-layer {
+    background-color: #3498db;
+    padding: 40px;
+}
+
+/* Content layer */
+.content-layer {
+    width: 180px;
+    height: 100px;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.comparison {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.default-box,
+.border-box {
+    width: 200px;
+    height: 120px;
+
+    padding: 30px;
+    border: 10px solid #333;
+
+    background-color: #3498db;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Default box-sizing is content-box */
+.default-box {
+    box-sizing: content-box;
+}
+
+/* border-box includes padding and border in width/height */
+.border-box {
+    box-sizing: border-box;
+}
+
