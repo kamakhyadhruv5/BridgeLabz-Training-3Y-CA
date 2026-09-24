@@ -1,0 +1,17 @@
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contact-form {
+    max-width: 600px;
+}
+
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}

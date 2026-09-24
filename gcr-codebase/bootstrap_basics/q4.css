@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.table {
+    background-color: white;
+}
+
+main img {
+    max-height: 400px;
+    object-fit: cover;
+}
