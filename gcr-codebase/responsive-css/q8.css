@@ -1,0 +1,56 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.comparison {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+}
+
+figure {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.filtered {
+    filter: brightness(60%);
+    transition: filter 0.5s ease;
+}
+
+.filtered:hover {
+    filter: brightness(100%);
+}
+
+figcaption {
+    padding: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    figure {
+        width: 100%;
+    }
+}
