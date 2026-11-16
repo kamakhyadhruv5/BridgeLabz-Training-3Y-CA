@@ -1,0 +1,135 @@
+# Assignment 6 – Async Programming with JavaScript
+
+### Q1. Asynchronous Coffee Maker
+
+Write a JavaScript program to simulate a coffee-making process using Promises.
+
+- Create three functions to boil water, brew coffee, and pour coffee into a cup.
+- Each function should return a Promise and take 1–2 seconds to complete.
+- Use `.then()` to execute the functions one after another.
+- Display `"Coffee ready for the team!"` after all steps are completed.
+- Use `.catch()` to handle errors and simulate random failures using `Math.random()`.
+
+### Q2. Task Scheduler – Microtasks and Macrotasks
+
+Write a JavaScript program to demonstrate the execution order of synchronous and asynchronous tasks.
+
+- Print `"Start"` first.
+- Use `setTimeout()` to execute a callback function.
+- Use `Promise.resolve().then()` to execute a Promise callback.
+- Add another synchronous console log.
+- Print `"End"` at the end of the synchronous code.
+- Explain why the Promise callback executes before the `setTimeout()` callback.
+
+### Q3. Bug Tracker – Callback to Promise Conversion
+
+Convert an existing callback-based function into a Promise-based function.
+
+- Create a function named `getBugs()` that returns a Promise.
+- The function should return an array containing `"UI glitch"`, `"API timeout"`, and `"Login failure"`.
+- Use `setTimeout()` to simulate a delay of one second.
+- Display the fetched bugs using `console.table()`.
+- Simulate random API failure using a boolean variable.
+- Handle errors using `.catch()`.
+
+### Q4. Managing Multiple Server Responses
+
+Write a JavaScript program to manage responses from two servers using Promises.
+
+- Server A should respond after 2 seconds.
+- Server B should respond after 3 seconds.
+- Use `Promise.all()` to wait for both servers and display `"Deployment completed for all servers"`.
+- Use `Promise.race()` to identify and display the first server response.
+- Simulate random failures using `Math.random()`.
+- Handle errors using `.catch()`.
+
+### Q5. Avoiding Callback Hell Using Async/Await
+
+Write a JavaScript program to demonstrate callback hell and how it can be avoided using async/await.
+
+- Create five asynchronous stages: Design, Build, Test, Deploy, and Celebrate.
+- Each stage should take one second to complete.
+- First, implement the process using nested callbacks.
+- Then, implement the same process using `async/await`.
+- Display a message after each stage is completed.
+- Explain why async/await makes the code easier to read and maintain.
+
+### Q6. Fetching Product Details Using an API
+
+Write a JavaScript program to fetch product information from the Fake Store API.
+
+API URL: https://fakestoreapi.com/products
+
+- Use `fetch()` with either `.then()` or `async/await` to retrieve product data.
+- Display the title, price, and image URL of every product.
+- Add a `$` symbol before displaying the product price.
+- Handle errors using `try/catch`.
+- Display `"Failed to load products. Please try again."` if the API request fails.
+
+**Bonus:** Create product cards dynamically using `document.createElement()` and append them to the HTML page.
+
+### Q7. Handling Multiple Promises Using Promise.allSettled()
+
+Write a JavaScript program to load three different dashboard sections simultaneously.
+
+- Create three functions: `loadProfile()`, `loadPosts()`, and `loadMessages()`.
+- Set their execution delays to 2 seconds, 1.5 seconds, and 1 second respectively.
+- Use `Promise.allSettled()` to execute and handle all three Promises.
+- Randomly reject one of the Promises.
+- Display which sections were successfully loaded and which failed.
+- Calculate and display the total execution time using `Date.now()`.
+
+### Q8. Order Processing Using Retry Mechanism
+
+Write a JavaScript program to implement a retry mechanism for order submission.
+
+- Create a function named `submitOrder()` that returns a Promise.
+- The Promise should have a 50% chance of failure.
+- Create an asynchronous function named `processOrder()`.
+- Allow the function to attempt order submission a maximum of three times using a loop and `await`.
+- Display `"Attempt X: Success"` when the order succeeds.
+- Display `"Attempt X: Failed"` when an attempt fails.
+- If all three attempts fail, throw an error with the message `"Order could not be processed"`.
+- Handle the final error using `try/catch`.
+
+### Q9. Understanding JavaScript Event Loop
+
+Write a JavaScript program to understand how the event loop handles microtasks and macrotasks.
+
+Use the following statements:
+
+```javascript
+console.log("Script start");
+
+setTimeout(() => console.log("Timeout callback"), 0);
+
+Promise.resolve().then(() => console.log("Promise callback"));
+
+console.log("Script end");
+```
+
+- Predict the output order before executing the program.
+- Write the predicted output order in comments.
+- Run the program and compare the actual output with your prediction.
+- Explain why the Promise callback executes before the `setTimeout()` callback.
+
+### Q10. Asynchronous Food Delivery Pipeline
+
+Write a JavaScript program to simulate an asynchronous food delivery process using Promises and async/await.
+
+- Create five steps: Take Order, Prepare Food, Pack Order, Dispatch Order, and Deliver Order.
+- Each step should return a Promise.
+- Each Promise should have a random delay of 1–2 seconds and a possibility of success or failure.
+- Create an asynchronous function named `runPipeline()` to execute all steps one after another using `await`.
+- Use `try/catch` to handle errors.
+- Display the following messages as each step completes:
+
+  1. Start Pipeline
+  2. Step 1: Order taken
+  3. Step 2: Food prepared
+  4. Step 3: Package ready
+  5. Step 4: Out for delivery
+  6. Delivery completed!
+
+- If any step fails, display `"Pipeline failed!"`.
+- Add comments explaining asynchronous execution and how the event loop handles these operations.
