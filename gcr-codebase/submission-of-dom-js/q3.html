@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="q3.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <div id="step1">
+        <h3>Step 1: Name</h3>
+        <input type="text" id="name" placeholder="Enter name">
+        <p id="error1"></p>
+    </div>
+
+    <div id="step2" hidden>
+        <h3>Step 2: Email</h3>
+        <input type="email" id="email" placeholder="Enter email">
+        <p id="error2"></p>
+    </div>
+
+    <div id="step3" hidden>
+        <h3>Step 3: Password</h3>
+        <input type="password" id="password" placeholder="Enter password">
+        <p id="error3"></p>
+    </div>
+
+    <button id="backButton">Back</button>
+    <button id="nextButton">Next</button>
+
+    <div id="summary" hidden></div>
+
+    <script src="q3.js"></script>
+</body>
+</html>

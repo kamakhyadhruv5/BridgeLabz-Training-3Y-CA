@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Table Filter</title>
+    <link rel="stylesheet" href="q6.css">
+</head>
+<body>
+
+    <h1>Student Records</h1>
+
+    <input type="text" id="searchInput" placeholder="Search students">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable">
+            <tr>
+                <td>Dhruv</td>
+                <td>CSE</td>
+                <td>8.5</td>
+            </tr>
+
+            <tr>
+                <td>Rahul</td>
+                <td>ECE</td>
+                <td>9.0</td>
+            </tr>
+
+            <tr>
+                <td>Aman</td>
+                <td>IT</td>
+                <td>7.8</td>
+            </tr>
+
+            <tr>
+                <td>Priya</td>
+                <td>CSE</td>
+                <td>8.9</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p id="noResults" hidden>No results found</p>
+
+    <script src="q6.js"></script>
+</body>
+</html>
