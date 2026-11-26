@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #ccc;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#output {
+    line-height: 2;
+    white-space: pre-line;
+}
