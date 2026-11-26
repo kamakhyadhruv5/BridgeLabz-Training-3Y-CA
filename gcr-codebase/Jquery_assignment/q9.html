@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi jQuery Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <h1>Multi-jQuery Dashboard</h1>
+</header>
+
+<main>
+<section>
+    <h2>Carousel - Version 1</h2>
+
+    <div id="carousel">
+        <article class="item widget">Widget 1 - Analytics</article>
+        <article class="item widget">Widget 2 - Reports</article>
+        <article class="item widget">Widget 3 - Users</article>
+        <article class="item widget">Widget 4 - Sales</article>
+        <article class="item widget">Widget 5 - Settings</article>
+    </div>
+
+    <button id="next">Next Widget</button>
+</section>
+
+<section>
+    <h2>Notifications - Version 2</h2>
+
+    <button id="openModal">Open Notification</button>
+
+    <div id="modal" style="display:none;">
+        <h3>Notification</h3>
+        <p>You have a new notification!</p>
+        <button id="closeModal">Close</button>
+    </div>
+</section>
+
+<section>
+    <h2>Tooltips - Version 2</h2>
+
+    <p class="tooltip" title="This is the analytics section">
+        Hover over Analytics
+    </p>
+
+    <p class="tooltip" title="This is the reports section">
+        Hover over Reports
+    </p>
+
+    <p class="tooltip" title="This is the settings section">
+        Hover over Settings
+    </p>
+</section>
+</main>
+
+<!-- Load jQuery Version 1 -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Save Version 1 and release global jQuery variable -->
+<script>
+    var jq1 = jQuery.noConflict(true);
+</script>
+
+<!-- Load jQuery Version 2 -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Save Version 2 and release global jQuery variable -->
+<script>
+    var jq2 = jQuery.noConflict(true);
+</script>
+
+<script src="q9.js"></script>
+</body>
+</html>

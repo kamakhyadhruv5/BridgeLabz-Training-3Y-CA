@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #222;
+    padding: 25px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+section {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 6px 4px;
+    border: none;
+    border-radius: 5px;
+    background: #334155;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #475569;
+}
+
+input {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.item, .product, .course, .post, .banner {
+    padding: 15px;
+    margin: 10px 0;
+    background: #f8fafc;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.highlight, .selected {
+    background: #d1fae5 !important;
+    border: 2px solid #059669;
+}
+
+.hidden {
+    display: none;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+.answer {
+    padding: 12px;
+    background: #f1f5f9;
+}
+
+footer {
+    color: #666;
+}

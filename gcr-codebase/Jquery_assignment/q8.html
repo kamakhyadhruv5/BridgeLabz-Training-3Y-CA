@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Blog Posts</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+    <h1>Blog Management Panel</h1>
+</header>
+
+<main>
+<section>
+    <h2>Manage Blog Posts</h2>
+
+    <input type="text" id="postTitle" placeholder="Enter post title">
+
+    <button id="addPost">Add New Post</button>
+    <button id="featured">Prepend Featured Post</button>
+    <button id="removeLast">Remove Last Post</button>
+    <button id="addTag">Add Tag</button>
+    <button id="highlight">Highlight Keywords</button>
+
+    <div id="posts">
+
+        <article class="post">
+            <h3>Introduction to JavaScript</h3>
+            <p>Learn the basics of JavaScript programming.</p>
+        </article>
+
+        <article class="post">
+            <h3>Learning jQuery</h3>
+            <p>jQuery makes JavaScript easier to use.</p>
+        </article>
+
+        <article class="post">
+            <h3>Web Development Guide</h3>
+            <p>Learn HTML, CSS and JavaScript.</p>
+        </article>
+
+        <article class="post">
+            <h3>Python Programming</h3>
+            <p>Explore Python and its applications.</p>
+        </article>
+
+        <article class="post">
+            <h3>Cloud Computing</h3>
+            <p>Understand cloud technologies.</p>
+        </article>
+
+    </div>
+</section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q8.js"></script>
+</body>
+</html>
