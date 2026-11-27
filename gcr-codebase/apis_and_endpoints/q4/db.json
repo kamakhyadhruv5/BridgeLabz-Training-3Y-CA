@@ -1,0 +1,26 @@
+
+{
+  "users": [
+    { "id": "1", "name": "Rahul" },
+    { "id": "2", "name": "Aman" },
+    { "id": "3", "name": "Priya" },
+    { "id": "4", "name": "Sneha" },
+    { "id": "5", "name": "Rohan" }
+  ],
+
+  "orders": [
+    { "id": "1", "item": "Laptop", "amount": 50000 },
+    { "id": "2", "item": "Mobile", "amount": 20000 },
+    { "id": "3", "item": "Keyboard", "amount": 1500 },
+    { "id": "4", "item": "Mouse", "amount": 800 },
+    { "id": "5", "item": "Headphones", "amount": 3000 }
+  ],
+
+  "products": [
+    { "id": "1", "name": "Laptop", "price": 50000 },
+    { "id": "2", "name": "Mobile", "price": 20000 },
+    { "id": "3", "name": "Keyboard", "price": 1500 },
+    { "id": "4", "name": "Mouse", "price": 800 },
+    { "id": "5", "name": "Headphones", "price": 3000 }
+  ]
+}

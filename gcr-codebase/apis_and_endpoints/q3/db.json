@@ -1,0 +1,35 @@
+
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Complete Java Assignment",
+      "priority": "high",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Read Operating Systems",
+      "priority": "medium",
+      "completed": false
+    },
+    {
+      "id": "3",
+      "title": "Practice JavaScript",
+      "priority": "low",
+      "completed": true
+    },
+    {
+      "id": "4",
+      "title": "Prepare Project Report",
+      "priority": "high",
+      "completed": false
+    },
+    {
+      "id": "5",
+      "title": "Learn AJAX",
+      "priority": "medium",
+      "completed": true
+    }
+  ]
+}

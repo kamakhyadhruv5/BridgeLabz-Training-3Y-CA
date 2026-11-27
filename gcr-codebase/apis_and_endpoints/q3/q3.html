@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        main {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8fafc;
+            border: 1px solid #ddd;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Task Manager</h1>
+</header>
+
+<main>
+    <section>
+        <h2>My Tasks</h2>
+
+        <label for="filter">Filter Tasks:</label>
+
+        <select id="filter">
+            <option value="all">All Tasks</option>
+            <option value="low">Low Priority</option>
+            <option value="medium">Medium Priority</option>
+            <option value="high">High Priority</option>
+            <option value="completed">Completed</option>
+        </select>
+
+        <div id="taskList" aria-live="polite"></div>
+
+        <p id="message"></p>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q3.js"></script>
+</body>
+</html>

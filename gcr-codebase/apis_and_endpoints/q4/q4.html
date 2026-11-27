@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi API Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        .card h2 {
+            color: #334155;
+        }
+
+        .skeleton {
+            background: #ddd;
+            height: 25px;
+            border-radius: 5px;
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+
+        #warning {
+            color: red;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 600px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
+
+<main>
+    <section class="dashboard">
+
+        <article class="card">
+            <h2>Total Users</h2>
+            <p id="users" class="skeleton"></p>
+        </article>
+
+        <article class="card">
+            <h2>Total Orders</h2>
+            <p id="orders" class="skeleton"></p>
+        </article>
+
+        <article class="card">
+            <h2>Total Products</h2>
+            <p id="products" class="skeleton"></p>
+        </article>
+
+    </section>
+
+    <p id="warning" role="status"></p>
+</main>
+
+<script src="q4.js"></script>
+</body>
+</html>

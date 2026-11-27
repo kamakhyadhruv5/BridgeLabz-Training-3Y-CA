@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Product Search</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+            background: #f1f5f9;
+        }
+
+        main {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+
+        .product {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        .product img {
+            width: 120px;
+            height: 85px;
+            object-fit: cover;
+        }
+
+        #loading {
+            display: none;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Online Store</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Search Products</h2>
+
+        <label for="search">Product Name:</label>
+        <input type="text" id="search" placeholder="Start typing...">
+
+        <p id="loading" aria-live="polite">Loading products...</p>
+
+        <div id="results" aria-live="polite"></div>
+    </section>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="q1.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+            background: #f1f5f9;
+        }
+
+        main {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .employee {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .active {
+            color: green;
+        }
+
+        .inactive {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Employee Status Dashboard</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Employees</h2>
+
+        <div id="employeeList" aria-live="polite"></div>
+
+        <p id="message" role="status"></p>
+    </section>
+</main>
+
+<script src="q2.js"></script>
+</body>
+</html>
